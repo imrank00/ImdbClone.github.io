@@ -29,7 +29,7 @@ function renderList(actionForButton){
 		<div class="movie-title-container">
 			<span>${currentMovieStack[i].title}</span>
 			<div class="rating-container">
-				<img src="/images/rating-icon.png" alt="">
+				<img src="images/rating-icon.png" alt="">
 				<span>${currentMovieStack[i].vote_average}</span>
 			</div>
 		</div>
@@ -98,7 +98,7 @@ function favourite(element){
 	let id = element.dataset.id;
 	for(let i = 0; i< currentMovieStack.length; i++){
 		if(currentMovieStack[i].id == id){
-			let favouriteMoviesAkash = JSON.parse(localStorage.getItem("favouriteMoviesImran"));
+			let favouriteMoviesImran = JSON.parse(localStorage.getItem("favouriteMoviesImran"));
 			
 			if(favouriteMoviesImran == null){
 				favouriteMoviesImran = [];
